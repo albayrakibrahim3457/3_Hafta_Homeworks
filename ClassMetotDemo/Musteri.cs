@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassMetotDemo
 {
-    class Musteri
+    public class Musteri
     {
-        int Id = "001";
-        string Adi = "";
-        string Soyadi = "";
-        string TC = "";
-
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public int AccountBalance { get; set; }
     }
 }
