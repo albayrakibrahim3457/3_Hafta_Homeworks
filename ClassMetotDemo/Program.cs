@@ -28,6 +28,24 @@ namespace ClassMetotDemo
             musteri3.LastName = "Albayrak";
             musteri3.AccountBalance = 30000;
 
+            Musteri[] musteriler = new Musteri[]
+{
+            musteri1, musteri2, musteri3
+};
+            Console.WriteLine("Müşteriler Listelendi \n ------------------------");
+            MusteriManager musteriManager = new MusteriManager();
+            foreach (var item in musteriler)
+            {
+                musteriManager.Listele(item);
+            }
+
+            musteriManager.Ekle(musteri1);
+            Console.WriteLine("--------------");
+            musteriManager.Sil(musteri3);
+            Console.WriteLine("--------------");
+            musteriManager.HesapBakiyesi(musteri2);
+
+
         }
 
 

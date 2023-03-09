@@ -12,5 +12,6 @@ namespace ClassMetotDemo
         public string Name { get; set; }
         public string LastName { get; set; }
         public int AccountBalance { get; set; }
+        
     }
 }

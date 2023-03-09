@@ -10,19 +10,26 @@ namespace ClassMetotDemo
     {
         public void Ekle(Musteri musteri)
         {
-            Console.WriteLine(musteri.Id + " " + musteri.Name + " " + musteri.LastName + "isimli müşteri sisteme eklendi.");
+            Console.WriteLine(musteri.Id + " " + musteri.Name + " " + musteri.LastName + " isimli müşteri sisteme eklendi.");
         }
 
         public void Sil(Musteri musteri)
         {
-            Console.WriteLine(musteri.Id + " " + musteri.Name + " " + musteri.LastName + "isimli müşteri sistemden silindi.");
+            Console.WriteLine(musteri.Id + " " + musteri.Name + " " + musteri.LastName + " isimli müşteri sistemden silindi.");
         }
 
         public void HesapBakiyesi(Musteri musteri)
         {
-            Console.WriteLine(musteri.Id + " " + musteri.Name + " " + musteri.LastName + "isimli müşterinin hesap bakiyesi" + musteri.AccountBalance + " TL dir.");
+            Console.WriteLine(musteri.Id + " " + musteri.Name + " " + musteri.LastName + " isimli müşterinin hesap bakiyesi " + musteri.AccountBalance + " TL dir.");
         }
 
+        public void Listele(Musteri musteri)
+        {
+            Console.WriteLine("Ad : " + musteri.Name);
+            Console.WriteLine("Soyad : " + musteri.LastName);
+            Console.WriteLine("Hesap Bakiyesi : " + musteri.AccountBalance);
+            Console.WriteLine("________________________");
 
+        }
     }
 }
